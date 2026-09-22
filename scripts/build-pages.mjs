@@ -20,7 +20,7 @@ markup=markup.replace(/(src|href)="\/(?!\/)([^"]*)"/g,'$1="./public/$2"');
 const css=(await readFile(path.join(root,'app/globals.css'),'utf8'))
  .replace(/@import\s+[^;]+;/g,'').replace(/@theme\s+inline\s*\{[^}]*\}/g,'')
  .replace(/url\(['"]?\/fonts\//g,"url('./public/fonts/");
-const html='<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>PEE | Planejamento Estratégico Evolucionário — ABO Academy</title><meta name="description" content="Construa a estratégia da sua organização enquanto desenvolve líderes capazes de concebê-la, assumi-la e prepará-la para a execução."><link rel="stylesheet" href="./styles.css"></head><body>'+markup+'</body></html>';
+const html='<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="robots" content="noindex, nofollow"><meta name="viewport" content="width=device-width, initial-scale=1"><title>PEE | Planejamento Estratégico Evolucionário — ABO Academy</title><meta name="description" content="Construa a estratégia da sua organização enquanto desenvolve líderes capazes de concebê-la, assumi-la e prepará-la para a execução."><link rel="stylesheet" href="./styles.css"></head><body>'+markup+'</body></html>';
 for(const m of html.matchAll(/(?:src|href)="\.\/([^"#]+)"/g)) { if(m[1]!=='styles.css') await access(path.join(root,m[1])); }
 await writeFile(path.join(root,'index.html'),html);
 await writeFile(path.join(root,'styles.css'),css);
