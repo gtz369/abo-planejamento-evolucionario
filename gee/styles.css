@@ -28,3 +28,8 @@
 /* Vector icons avoid platform-specific emoji glyphs on iOS. */
 .icon{display:inline-block;width:1em;height:1em;vertical-align:-.125em;flex-shrink:0;overflow:visible}
 .button .icon{width:1.15em;height:1.15em}
+
+/* Editorial meeting photo with a navy overlay for readable hero copy. */
+.hero{background-color:var(--navy);background-image:linear-gradient(90deg,rgba(20,31,54,.91) 0%,rgba(20,31,54,.85) 44%,rgba(20,31,54,.72) 100%),url('./public/hero-gestao-reuniao.jpg');background-size:cover;background-position:center 44%;background-repeat:no-repeat}
+.hero-foot{background:linear-gradient(0deg,rgba(20,31,54,.55),transparent)}
+@media(max-width:760px){.hero{background-image:linear-gradient(180deg,rgba(20,31,54,.83),rgba(20,31,54,.89) 62%,#141f36 100%),url('./public/hero-gestao-reuniao.jpg');background-size:cover,auto 900px;background-position:center,62% top}}
