@@ -24,3 +24,7 @@
 .assessment-cadences{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:40px}.assessment-cadences article{padding:27px 30px;background:var(--paper);border-top:3px solid #7749a5;border-radius:0 0 5px 5px}.assessment-cadences article:last-child{border-color:#2f62a3}.assessment-cadences h3{margin:15px 0;font-size:1.5rem}.assessment-cadences p{font-size:1.0625rem}
 #ecmm{border-bottom:1px solid var(--line)}.ai-section{padding:80px 0}.ai-section .section-label>span:last-child{color:#b9c7de}.ai-section .lead{color:#f0f4fa}.ai-contexts{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:38px;padding-top:28px;border-top:1px solid #43516a}.ai-contexts p{font-size:1rem;margin:0}.ai-contexts span{display:block;font-size:.8125rem;letter-spacing:1px;color:var(--light-orange);margin-bottom:12px}.ai-section .text-link{color:#ffad96;margin-top:28px}
 @media(max-width:760px){.assessment-cadences{grid-template-columns:1fr;gap:20px;margin-top:28px}.assessment-cadences article{padding:23px}.ai-section{padding:60px 0}.ai-contexts{grid-template-columns:1fr;gap:25px}.resource-links{gap:12px}.resource-links a{display:block;width:100%}}
+
+/* Vector icons avoid platform-specific emoji glyphs on iOS. */
+.icon{display:inline-block;width:1em;height:1em;vertical-align:-.125em;flex-shrink:0;overflow:visible}
+.button .icon{width:1.15em;height:1.15em}
