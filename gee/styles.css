@@ -33,3 +33,25 @@
 .hero{background-color:var(--navy);background-image:linear-gradient(90deg,rgba(20,31,54,.91) 0%,rgba(20,31,54,.85) 44%,rgba(20,31,54,.72) 100%),url('./public/hero-gestao-reuniao.jpg');background-size:cover;background-position:center 44%;background-repeat:no-repeat}
 .hero-foot{background:linear-gradient(0deg,rgba(20,31,54,.55),transparent)}
 @media(max-width:760px){.hero{background-image:linear-gradient(180deg,rgba(20,31,54,.83),rgba(20,31,54,.89) 62%,#141f36 100%),url('./public/hero-gestao-reuniao.jpg');background-size:cover,auto 900px;background-position:center,62% top}}
+
+/* Cadence: a photographic background under a navy layer. */
+.rhythm-section{background-color:var(--navy);background-image:linear-gradient(90deg,rgba(20,31,54,.91) 0%,rgba(20,31,54,.85) 45%,rgba(20,31,54,.83) 100%),url('./public/gestao-cadencia.jpg');background-size:cover;background-position:center 48%;background-repeat:no-repeat}
+.rhythm-section p{color:#d6deeb}.rhythm-section .eyebrow{color:#c3cee0}.rhythm-section .rhythm-list article{border-color:rgba(205,217,237,.28)}
+@media(max-width:760px){.rhythm-section{background-image:linear-gradient(180deg,rgba(20,31,54,.86),rgba(20,31,54,.92)),url('./public/gestao-cadencia.jpg');background-position:65% center}}
+
+/* Mirrored AI photograph on its own layer, beneath the navy overlay and text. */
+.ai-section{position:relative;isolation:isolate;background:var(--navy)}
+.ai-section::before,.ai-section::after{content:"";position:absolute;inset:0;pointer-events:none}
+.ai-section::before{z-index:-2;background:url('./public/agentes-ia-lideranca.jpg') center 48%/cover no-repeat;transform:scaleX(-1)}
+.ai-section::after{z-index:-1;background:linear-gradient(90deg,rgba(20,31,54,.91) 0%,rgba(20,31,54,.85) 45%,rgba(20,31,54,.83) 100%)}
+.ai-section p{color:#d6deeb}.ai-section .eyebrow{color:#c3cee0}.ai-section .ai-contexts{border-color:rgba(205,217,237,.28)}
+@media(max-width:760px){.ai-section::before{background-position:65% center}.ai-section::after{background:linear-gradient(180deg,rgba(20,31,54,.86),rgba(20,31,54,.92))}}
+
+/* Brighter orange emphasis for the AI headline and contact link. */
+#ia-title em,.ai-section .text-link{color:#ff875f}
+.ai-section .text-link:hover{color:#ffa385}
+
+/* Final invitation: leaders taking the next step, under a navy overlay. */
+.contact{background-color:var(--navy);background-image:linear-gradient(90deg,rgba(20,31,54,.85) 0%,rgba(20,31,54,.91) 45%,rgba(20,31,54,.87) 65%,rgba(20,31,54,.72) 100%),url('./public/cta-evolucao-estrategica.jpg');background-size:cover;background-position:center 44%;background-repeat:no-repeat}
+.contact p{color:#d6deeb}.contact .eyebrow{color:#c3cee0}.contact .contact-note{color:#bdc9dc}
+@media(max-width:760px){.contact{background-image:linear-gradient(180deg,rgba(20,31,54,.88),rgba(20,31,54,.94)),url('./public/cta-evolucao-estrategica.jpg');background-position:72% center}}
