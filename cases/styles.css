@@ -62,3 +62,13 @@ em{color:var(--abo-red)}
 #desafio::before{content:"";position:absolute;inset:0;z-index:-2;background:url('public/desafio-conceitual.png') center / cover no-repeat;transform:scaleX(-1)}
 #desafio::after{content:"";position:absolute;inset:0;z-index:-1;background:rgba(57,57,89,.85)}
 @media(max-width:600px){#desafio{background-image:none}#desafio::before{background-position:65% center}#desafio::after{background:rgba(57,57,89,.9)}}
+/* Identify the case immediately and introduce the client's business on mobile. */
+.case-kicker{font-size:14px;font-weight:700;letter-spacing:1.6px;color:var(--abo-purple);margin:0 0 16px}
+.case-logo{display:flex;justify-content:center;margin:28px 0 38px}
+.case-logo img{width:250px;height:auto}
+.hero .breadcrumb{margin-bottom:0}
+.client{padding-top:15px;padding-bottom:15px}
+.client p{margin-top:0}
+.journey-photo{margin:0 0 36px}
+@media(max-width:600px){.case-kicker{font-size:12px;letter-spacing:1.2px}.case-logo{margin:26px 0 30px}.case-logo img{width:210px}.hero-grid{gap:22px}.hero-photo{margin-top:26px}}
+@media(max-width:600px){.case-logo{margin:20px 0 22px}.case-logo img{width:180px}.hero h1{font-size:34px}.hero .intro{font-size:17px;margin:20px 0}.hero .eyebrow{margin-bottom:16px}.hero .client{padding-top:14px}.hero .client strong{font-size:18px}.hero .client p{margin-bottom:5px}.hero-grid{gap:16px}.hero-photo{margin-top:20px}}
